@@ -1,0 +1,117 @@
+
+C:\Users\dhanendra\ML\repo2\MLCoding>python WeatherPrediction.py
+2023-12-04 08:11:28.646881: I tensorflow/core/util/port.cc:113] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+WARNING:tensorflow:From C:\Users\dhanendra\AppData\Local\Programs\Python\Python310\lib\site-packages\keras\src\losses.py:2976: The name tf.losses.sparse_softmax_cross_entropy is deprecated. Please use tf.compat.v1.losses.sparse_softmax_cross_entropy instead.
+
+WARNING:tensorflow:From C:\Users\dhanendra\AppData\Local\Programs\Python\Python310\lib\site-packages\keras\src\backend.py:873: The name tf.get_default_graph is deprecated. Please use tf.compat.v1.get_default_graph instead.
+
+2023-12-04 08:11:49.310192: I tensorflow/core/platform/cpu_feature_guard.cc:182] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: SSE SSE2 SSE3 SSE4.1 SSE4.2 AVX2 FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+WARNING:tensorflow:From C:\Users\dhanendra\AppData\Local\Programs\Python\Python310\lib\site-packages\keras\src\optimizers\__init__.py:309: The name tf.train.Optimizer is deprecated. Please use tf.compat.v1.train.Optimizer instead.
+
+Epoch 1/50
+WARNING:tensorflow:From C:\Users\dhanendra\AppData\Local\Programs\Python\Python310\lib\site-packages\keras\src\utils\tf_utils.py:492: The name tf.ragged.RaggedTensorValue is deprecated. Please use tf.compat.v1.ragged.RaggedTensorValue instead.
+
+23/23 [==============================] - 2s 18ms/step - loss: 0.1733 - val_loss: 0.1363
+Epoch 2/50
+23/23 [==============================] - 0s 5ms/step - loss: 0.1424 - val_loss: 0.1197
+Epoch 3/50
+23/23 [==============================] - 0s 5ms/step - loss: 0.1222 - val_loss: 0.1103
+Epoch 4/50
+23/23 [==============================] - 0s 6ms/step - loss: 0.1113 - val_loss: 0.1050
+Epoch 5/50
+23/23 [==============================] - 0s 5ms/step - loss: 0.1048 - val_loss: 0.1029
+Epoch 6/50
+23/23 [==============================] - 0s 4ms/step - loss: 0.1010 - val_loss: 0.1015
+Epoch 7/50
+23/23 [==============================] - 0s 6ms/step - loss: 0.0978 - val_loss: 0.1006
+Epoch 8/50
+23/23 [==============================] - 0s 4ms/step - loss: 0.0953 - val_loss: 0.0993
+Epoch 9/50
+23/23 [==============================] - 0s 5ms/step - loss: 0.0935 - val_loss: 0.0988
+Epoch 10/50
+23/23 [==============================] - 0s 5ms/step - loss: 0.0918 - val_loss: 0.0980
+Epoch 11/50
+23/23 [==============================] - 0s 4ms/step - loss: 0.0904 - val_loss: 0.0978
+Epoch 12/50
+23/23 [==============================] - 0s 5ms/step - loss: 0.0893 - val_loss: 0.0978
+Epoch 13/50
+23/23 [==============================] - 0s 6ms/step - loss: 0.0882 - val_loss: 0.0971
+Epoch 14/50
+23/23 [==============================] - 0s 4ms/step - loss: 0.0872 - val_loss: 0.0966
+Epoch 15/50
+23/23 [==============================] - 0s 5ms/step - loss: 0.0865 - val_loss: 0.0973
+Epoch 16/50
+23/23 [==============================] - 0s 6ms/step - loss: 0.0856 - val_loss: 0.0967
+Epoch 17/50
+23/23 [==============================] - 0s 4ms/step - loss: 0.0850 - val_loss: 0.0968
+Epoch 18/50
+23/23 [==============================] - 0s 4ms/step - loss: 0.0845 - val_loss: 0.0971
+Epoch 19/50
+23/23 [==============================] - 0s 6ms/step - loss: 0.0840 - val_loss: 0.0970
+Epoch 20/50
+23/23 [==============================] - 0s 5ms/step - loss: 0.0836 - val_loss: 0.0966
+Epoch 21/50
+23/23 [==============================] - 0s 5ms/step - loss: 0.0832 - val_loss: 0.0965
+Epoch 22/50
+23/23 [==============================] - 0s 6ms/step - loss: 0.0832 - val_loss: 0.0963
+Epoch 23/50
+23/23 [==============================] - 0s 4ms/step - loss: 0.0826 - val_loss: 0.0969
+Epoch 24/50
+23/23 [==============================] - 0s 4ms/step - loss: 0.0825 - val_loss: 0.0970
+Epoch 25/50
+23/23 [==============================] - 0s 5ms/step - loss: 0.0821 - val_loss: 0.0966
+Epoch 26/50
+23/23 [==============================] - 0s 4ms/step - loss: 0.0821 - val_loss: 0.0964
+Epoch 27/50
+23/23 [==============================] - 0s 4ms/step - loss: 0.0816 - val_loss: 0.0962
+Epoch 28/50
+23/23 [==============================] - 0s 6ms/step - loss: 0.0816 - val_loss: 0.0967
+Epoch 29/50
+23/23 [==============================] - 0s 6ms/step - loss: 0.0816 - val_loss: 0.0967
+Epoch 30/50
+23/23 [==============================] - 0s 4ms/step - loss: 0.0815 - val_loss: 0.0967
+Epoch 31/50
+23/23 [==============================] - 0s 5ms/step - loss: 0.0809 - val_loss: 0.0970
+Epoch 32/50
+23/23 [==============================] - 0s 5ms/step - loss: 0.0808 - val_loss: 0.0970
+Epoch 33/50
+23/23 [==============================] - 0s 5ms/step - loss: 0.0806 - val_loss: 0.0969
+Epoch 34/50
+23/23 [==============================] - 0s 6ms/step - loss: 0.0807 - val_loss: 0.0969
+Epoch 35/50
+23/23 [==============================] - 0s 4ms/step - loss: 0.0806 - val_loss: 0.0970
+Epoch 36/50
+23/23 [==============================] - 0s 5ms/step - loss: 0.0804 - val_loss: 0.0965
+Epoch 37/50
+23/23 [==============================] - 0s 6ms/step - loss: 0.0801 - val_loss: 0.0966
+Epoch 38/50
+23/23 [==============================] - 0s 6ms/step - loss: 0.0799 - val_loss: 0.0966
+Epoch 39/50
+23/23 [==============================] - 0s 4ms/step - loss: 0.0799 - val_loss: 0.0962
+Epoch 40/50
+23/23 [==============================] - 0s 4ms/step - loss: 0.0797 - val_loss: 0.0966
+Epoch 41/50
+23/23 [==============================] - 0s 6ms/step - loss: 0.0798 - val_loss: 0.0966
+Epoch 42/50
+23/23 [==============================] - 0s 4ms/step - loss: 0.0794 - val_loss: 0.0967
+Epoch 43/50
+23/23 [==============================] - 0s 5ms/step - loss: 0.0794 - val_loss: 0.0967
+Epoch 44/50
+23/23 [==============================] - 0s 4ms/step - loss: 0.0793 - val_loss: 0.0963
+Epoch 45/50
+23/23 [==============================] - 0s 5ms/step - loss: 0.0794 - val_loss: 0.0962
+Epoch 46/50
+23/23 [==============================] - 0s 6ms/step - loss: 0.0791 - val_loss: 0.0960
+Epoch 47/50
+23/23 [==============================] - 0s 6ms/step - loss: 0.0791 - val_loss: 0.0964
+Epoch 48/50
+23/23 [==============================] - 0s 4ms/step - loss: 0.0788 - val_loss: 0.0961
+Epoch 49/50
+23/23 [==============================] - 0s 5ms/step - loss: 0.0790 - val_loss: 0.0960
+Epoch 50/50
+23/23 [==============================] - 0s 5ms/step - loss: 0.0789 - val_loss: 0.0956
+7/7 [==============================] - 0s 3ms/step
+Mean Squared Error on Test Set: 0.09769659307842331
+
+C:\Users\dhanendra\ML\repo2\MLCoding>
