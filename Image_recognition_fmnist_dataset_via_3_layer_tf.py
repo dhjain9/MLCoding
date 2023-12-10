@@ -7,9 +7,9 @@ import matplotlib.pyplot as plt
 # This callback gets calls when accuracy reaches certain threshold so that
 # we don't end up running all epochs.
 class testCallback(tf.keras.callbacks.Callback):
-  def on_done(self, epoch, logs={}):
-    if(logs.get('accuracy') >= 0.85): # We want to try until 90% correctness. 
-      print("\nReached 90% accuracy!")
+  def on_epoch_end(self, epoch, logs={}):
+    if(logs.get('accuracy') >= 0.80): # We want to try until 80% correctness. 
+      print("\n\nReached 80% accuracy. Stopping the training....\n\n")
       self.model.stop_training = True
 
 callbacks = testCallback()
@@ -42,9 +42,11 @@ fmnist = tf.keras.datasets.fashion_mnist
 # This part prints the data set image.
 index = 0
 np.set_printoptions(linewidth=320)
+
 # This is the matrix form of the data.
 print(f'LABEL is : {training_labels[index]}')
 print(f'\nMATRIX:\n {training_images[index]}')
+
 # This is the visual part of the image.
 plt.imshow(training_images[index])
 
@@ -76,11 +78,14 @@ model = tf.keras.models.Sequential([
   tf.keras.layers.Dense(10, activation=tf.nn.softmax)
 ])
 
-model.compile(optimizer='adam', loss='sparse_categorical_crossentropy', metrics=['accuracy'])
+model.compile(optimizer='adam',
+              loss='sparse_categorical_crossentropy',
+              metrics=['accuracy'])
 model.fit(training_images, training_labels, epochs=5, callbacks=[callbacks])
 
 model.evaluate(test_images, test_labels)
 classifications = model.predict(test_images)
+
 print(f'\nCLASSIFICATIONS:\n {classifications[0]}')
 print(f'\nPREDICTION IS : \n{test_labels[0]}')
 print(f'\nDONE\n\n')

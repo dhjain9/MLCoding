@@ -1,5 +1,5 @@
 C:\Users\dhanendra\ML\repo2\MLCoding>python Image_recognition_fmnist_dataset_via_3_layer_tf.py
-2023-12-09 10:12:30.546153: I tensorflow/core/util/port.cc:113] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+2023-12-10 06:10:04.695677: I tensorflow/core/util/port.cc:113] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
 WARNING:tensorflow:From C:\Users\dhanendra\AppData\Local\Programs\Python\Python310\lib\site-packages\keras\src\losses.py:2976: The name tf.losses.sparse_softmax_cross_entropy is deprecated. Please use tf.compat.v1.losses.sparse_softmax_cross_entropy instead.
 
 LABEL is : 9
@@ -35,7 +35,7 @@ MATRIX:
  [  0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0]]
 WARNING:tensorflow:From C:\Users\dhanendra\AppData\Local\Programs\Python\Python310\lib\site-packages\keras\src\backend.py:873: The name tf.get_default_graph is deprecated. Please use tf.compat.v1.get_default_graph instead.
 
-2023-12-09 10:12:45.483775: I tensorflow/core/platform/cpu_feature_guard.cc:182] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+2023-12-10 06:10:17.778469: I tensorflow/core/platform/cpu_feature_guard.cc:182] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
 To enable the following instructions: SSE SSE2 SSE3 SSE4.1 SSE4.2 AVX2 FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
 WARNING:tensorflow:From C:\Users\dhanendra\AppData\Local\Programs\Python\Python310\lib\site-packages\keras\src\optimizers\__init__.py:309: The name tf.train.Optimizer is deprecated. Please use tf.compat.v1.train.Optimizer instead.
 
@@ -44,20 +44,17 @@ WARNING:tensorflow:From C:\Users\dhanendra\AppData\Local\Programs\Python\Python3
 
 WARNING:tensorflow:From C:\Users\dhanendra\AppData\Local\Programs\Python\Python310\lib\site-packages\keras\src\engine\base_layer_utils.py:384: The name tf.executing_eagerly_outside_functions is deprecated. Please use tf.compat.v1.executing_eagerly_outside_functions instead.
 
-1875/1875 [==============================] - 12s 6ms/step - loss: 0.4726 - accuracy: 0.8307
-Epoch 2/5
-1875/1875 [==============================] - 12s 7ms/step - loss: 0.3572 - accuracy: 0.8688
-Epoch 3/5
-1875/1875 [==============================] - 14s 7ms/step - loss: 0.3219 - accuracy: 0.8820
-Epoch 4/5
-1875/1875 [==============================] - 28s 15ms/step - loss: 0.2957 - accuracy: 0.8891
-Epoch 5/5
-1875/1875 [==============================] - 21s 11ms/step - loss: 0.2774 - accuracy: 0.8957
-313/313 [==============================] - 4s 9ms/step - loss: 0.3411 - accuracy: 0.8781
-313/313 [==============================] - 2s 6ms/step
+1873/1875 [============================>.] - ETA: 0s - loss: 0.4737 - accuracy: 0.8313
+
+Reached 80% accuracy. Stopping the training....
+
+
+1875/1875 [==============================] - 12s 6ms/step - loss: 0.4737 - accuracy: 0.8313
+313/313 [==============================] - 1s 3ms/step - loss: 0.4173 - accuracy: 0.8501
+313/313 [==============================] - 1s 2ms/step
 
 CLASSIFICATIONS:
- [3.7435008e-08 3.0905760e-08 2.2126130e-09 2.9922895e-09 3.2354318e-08 1.8110935e-03 5.4106863e-08 8.1195105e-03 9.2369099e-09 9.9006921e-01]
+ [4.6085868e-05 1.5790740e-06 3.4137691e-05 2.6086943e-06 5.2824103e-05 5.6009394e-01 8.3002109e-05 8.3091296e-02 2.3758607e-03 3.5421866e-01]
 
 PREDICTION IS :
 9
