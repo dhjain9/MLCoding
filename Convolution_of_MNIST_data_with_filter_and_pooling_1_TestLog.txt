@@ -1,0 +1,36 @@
+C:\Users\dhanendra\ML\repo2\MLCoding>
+C:\Users\dhanendra\ML\repo2\MLCoding>python Convolution_of_MNIST_data_with_filter_and_pooling_1.py
+2023-12-19 14:51:53.077313: I tensorflow/core/util/port.cc:113] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+WARNING:tensorflow:From C:\Users\dhanendra\AppData\Local\Programs\Python\Python310\lib\site-packages\keras\src\losses.py:2976: The name tf.losses.sparse_softmax_cross_entropy is deprecated. Please use tf.compat.v1.losses.sparse_softmax_cross_entropy instead.
+
+Maximum pixel value: 1.0
+
+Shape of training set: (60000, 28, 28, 1)
+
+Final shape of each image: (28, 28, 1)
+WARNING:tensorflow:From C:\Users\dhanendra\AppData\Local\Programs\Python\Python310\lib\site-packages\keras\src\backend.py:873: The name tf.get_default_graph is deprecated. Please use tf.compat.v1.get_default_graph instead.
+
+WARNING:tensorflow:From C:\Users\dhanendra\AppData\Local\Programs\Python\Python310\lib\site-packages\keras\src\layers\pooling\max_pooling2d.py:161: The name tf.nn.max_pool is deprecated. Please use tf.nn.max_pool2d instead.
+
+2023-12-19 14:52:00.218998: I tensorflow/core/platform/cpu_feature_guard.cc:182] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: SSE SSE2 SSE3 SSE4.1 SSE4.2 AVX2 FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+WARNING:tensorflow:From C:\Users\dhanendra\AppData\Local\Programs\Python\Python310\lib\site-packages\keras\src\optimizers\__init__.py:309: The name tf.train.Optimizer is deprecated. Please use tf.compat.v1.train.Optimizer instead.
+
+Epoch 1/10
+WARNING:tensorflow:From C:\Users\dhanendra\AppData\Local\Programs\Python\Python310\lib\site-packages\keras\src\utils\tf_utils.py:492: The name tf.ragged.RaggedTensorValue is deprecated. Please use tf.compat.v1.ragged.RaggedTensorValue instead.
+
+WARNING:tensorflow:From C:\Users\dhanendra\AppData\Local\Programs\Python\Python310\lib\site-packages\keras\src\engine\base_layer_utils.py:384: The name tf.executing_eagerly_outside_functions is deprecated. Please use tf.compat.v1.executing_eagerly_outside_functions instead.
+
+1875/1875 [==============================] - 31s 16ms/step - loss: 0.1220 - accuracy: 0.9628
+Epoch 2/10
+1873/1875 [============================>.] - ETA: 0s - loss: 0.0415 - accuracy: 0.9873
+ Reached 97% accuracy. Stopping the training....
+
+
+1875/1875 [==============================] - 31s 17ms/step - loss: 0.0415 - accuracy: 0.9873
+Number of epochs consumed in training: 2 epochs
+
+C:\Users\dhanendra\ML\repo2\MLCoding>
+
+
+
