@@ -1,0 +1,71 @@
+C:\Users\dhanendra\ML\repo2\MLCoding>python Image_convolution_model_with_happy_and_sad_images.py
+2023-12-26 12:24:58.928511: I tensorflow/core/util/port.cc:113] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+WARNING:tensorflow:From C:\Users\dhanendra\AppData\Local\Programs\Python\Python310\lib\site-packages\keras\src\losses.py:2976: The name tf.losses.sparse_softmax_cross_entropy is deprecated. Please use tf.compat.v1.losses.sparse_softmax_cross_entropy instead.
+
+Found 63 images belonging to 2 classes.
+WARNING:tensorflow:From C:\Users\dhanendra\AppData\Local\Programs\Python\Python310\lib\site-packages\keras\src\backend.py:873: The name tf.get_default_graph is deprecated. Please use tf.compat.v1.get_default_graph instead.
+
+WARNING:tensorflow:From C:\Users\dhanendra\AppData\Local\Programs\Python\Python310\lib\site-packages\keras\src\layers\pooling\max_pooling2d.py:161: The name tf.nn.max_pool is deprecated. Please use tf.nn.max_pool2d instead.
+
+2023-12-26 12:25:07.070962: I tensorflow/core/platform/cpu_feature_guard.cc:182] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: SSE SSE2 SSE3 SSE4.1 SSE4.2 AVX2 FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+Model: "sequential"
+_________________________________________________________________
+ Layer (type)                Output Shape              Param #
+=================================================================
+ conv2d (Conv2D)             (None, 148, 148, 16)      448
+
+ max_pooling2d (MaxPooling2  (None, 74, 74, 16)        0
+ D)
+
+ conv2d_1 (Conv2D)           (None, 72, 72, 32)        4640
+
+ max_pooling2d_1 (MaxPoolin  (None, 36, 36, 32)        0
+ g2D)
+
+ conv2d_2 (Conv2D)           (None, 34, 34, 64)        18496
+
+ max_pooling2d_2 (MaxPoolin  (None, 17, 17, 64)        0
+ g2D)
+
+ flatten (Flatten)           (None, 18496)             0
+
+ dense (Dense)               (None, 512)               9470464
+
+ dense_1 (Dense)             (None, 1)                 513
+
+=================================================================
+Total params: 9494561 (36.22 MB)
+Trainable params: 9494561 (36.22 MB)
+Non-trainable params: 0 (0.00 Byte)
+_________________________________________________________________
+WARNING:absl:`lr` is deprecated in Keras optimizer, please use `learning_rate` or use the legacy optimizer, e.g.,tf.keras.optimizers.legacy.RMSprop.
+Epoch 1/20
+WARNING:tensorflow:From C:\Users\dhanendra\AppData\Local\Programs\Python\Python310\lib\site-packages\keras\src\utils\tf_utils.py:492: The name tf.ragged.RaggedTensorValue is deprecated. Please use tf.compat.v1.ragged.RaggedTensorValue instead.
+
+WARNING:tensorflow:From C:\Users\dhanendra\AppData\Local\Programs\Python\Python310\lib\site-packages\keras\src\utils\tf_utils.py:492: The name tf.ragged.RaggedTensorValue is deprecated. Please use tf.compat.v1.ragged.RaggedTensorValue instead.
+
+WARNING:tensorflow:From C:\Users\dhanendra\AppData\Local\Programs\Python\Python310\lib\site-packages\keras\src\engine\base_layer_utils.py:384: The name tf.executing_eagerly_outside_functions is deprecated. Please use tf.compat.v1.executing_eagerly_outside_functions instead.
+
+WARNING:tensorflow:From C:\Users\dhanendra\AppData\Local\Programs\Python\Python310\lib\site-packages\keras\src\engine\base_layer_utils.py:384: The name tf.executing_eagerly_outside_functions is deprecated. Please use tf.compat.v1.executing_eagerly_outside_functions instead.
+
+7/7 [==============================] - 3s 141ms/step - loss: 4.5926 - accuracy: 0.6190
+Epoch 2/20
+7/7 [==============================] - 1s 130ms/step - loss: 0.4857 - accuracy: 0.7778
+Epoch 3/20
+7/7 [==============================] - 1s 130ms/step - loss: 0.4436 - accuracy: 0.8254
+Epoch 4/20
+7/7 [==============================] - 1s 130ms/step - loss: 0.1709 - accuracy: 0.9365
+Epoch 5/20
+7/7 [==============================] - 1s 130ms/step - loss: 0.1639 - accuracy: 0.9841
+Epoch 6/20
+7/7 [==============================] - 1s 128ms/step - loss: 0.1499 - accuracy: 0.9365
+Epoch 7/20
+7/7 [==============================] - 1s 128ms/step - loss: 0.0591 - accuracy: 0.9841
+Epoch 8/20
+7/7 [==============================] - ETA: 0s - loss: 0.0151 - accuracy: 1.0000
+Reached 99.9% accuracy so cancelling training!
+7/7 [==============================] - 1s 128ms/step - loss: 0.0151 - accuracy: 1.0000
+Reached 99.5 accuracy after 8 epochs
+
+C:\Users\dhanendra\ML\repo2\MLCoding>
