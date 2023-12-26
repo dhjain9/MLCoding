@@ -4,9 +4,9 @@ from sklearn.model_selection import train_test_split
 from sklearn.preprocessing import StandardScaler
 from sklearn.metrics import mean_squared_error
 
-# Generate random weather data for demonstration
+# starting with low data size
 np.random.seed(40)
-data_size = 10000
+data_size = 1000
 features = np.random.rand(data_size, 5)  # 5 input features for each data point
 labels = np.random.rand(data_size, 1)  # 1 output label for each data point (e.g., temperature)
 
