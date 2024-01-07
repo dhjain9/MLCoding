@@ -4,7 +4,7 @@ from tensorflow.keras.preprocessing.text import Tokenizer
 
 learn_text = [
     'Weather is great today',
-    'Weather was great yesterday'
+    'Weather was great yesterday',
     'Weather is great tomorrow'
     ]
 
