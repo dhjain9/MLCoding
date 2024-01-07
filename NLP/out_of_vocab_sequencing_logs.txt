@@ -1,0 +1,19 @@
+C:\Users\dhanendra\ML\repo2\MLCoding\NLP>python out_of_vocab_sequencing.py
+2024-01-07 08:46:11.756738: I tensorflow/core/util/port.cc:113] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+WARNING:tensorflow:From C:\Users\dhanendra\AppData\Local\Programs\Python\Python310\lib\site-packages\keras\src\losses.py:2976: The name tf.losses.sparse_softmax_cross_entropy is deprecated. Please use tf.compat.v1.losses.sparse_softmax_cross_entropy instead.
+
+
+Learning text:
+['Weather is great today', 'Weather was great yesterday', 'Weather is great tomorrow']
+
+Word Index:
+{'<Unknown>': 1, 'weather': 2, 'great': 3, 'is': 4, 'today': 5, 'was': 6, 'yesterday': 7, 'tomorrow': 8}
+
+Sequence data (learning text):
+[[2, 4, 3, 5], [2, 6, 3, 7], [2, 4, 3, 8]]
+
+Test data:
+['weather is great in London', 'how is the weather today']
+
+Sequence data (test text):
+[[2, 4, 3, 1, 1], [1, 4, 1, 2, 5]]
