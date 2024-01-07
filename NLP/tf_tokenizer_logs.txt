@@ -1,0 +1,7 @@
+C:\Users\dhanendra\ML\repo2\MLCoding\NLP>python tokenize_a_sentence_with_tf_tokenizer.py
+2024-01-07 07:33:34.911980: I tensorflow/core/util/port.cc:113] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+WARNING:tensorflow:From C:\Users\dhanendra\AppData\Local\Programs\Python\Python310\lib\site-packages\keras\src\losses.py:2976: The name tf.losses.sparse_softmax_cross_entropy is deprecated. Please use tf.compat.v1.losses.sparse_softmax_cross_entropy instead.
+
+{'great': 1, 'weather': 2, 'is': 3, 'today': 4, 'was': 5, 'yesterdayweather': 6, 'tomorrow': 7}
+
+C:\Users\dhanendra\ML\repo2\MLCoding\NLP>
