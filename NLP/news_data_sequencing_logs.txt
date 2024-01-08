@@ -1,0 +1,38 @@
+C:\Users\dhanendra\ML\repo2\MLCoding\NLP>python news_data_sequencing.py
+2024-01-07 17:39:03.984922: I tensorflow/core/util/port.cc:113] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+WARNING:tensorflow:From C:\Users\dhanendra\AppData\Local\Programs\Python\Python310\lib\site-packages\keras\src\losses.py:2976: The name tf.losses.sparse_softmax_cross_entropy is deprecated. Please use tf.compat.v1.losses.sparse_softmax_cross_entropy instead.
+
+common words: total: 153
+['a', 'about', 'above', 'after', 'again', 'against', 'all', 'am', 'an', 'and', 'any', 'are', 'as', 'at', 'be', 'because', 'been', 'before', 'being', 'below', 'between', 'both', 'but', 'by', 'could', 'did', 'do', 'does', 'doing', 'down', 'during', 'each', 'few', 'for', 'from', 'further', 'had', 'has', 'have', 'having', 'he', "he'd", "he'll", "he's", 'her', 'here', "here's", 'hers', 'herself', 'him', 'himself', 'his', 'how', "how's", 'i', "i'd", "i'll", "i'm", "i've", 'if', 'in', 'into', 'is', 'it', "it's", 'its', 'itself', "let's", 'me', 'more', 'most', 'my', 'myself', 'nor', 'of', 'on', 'once', 'only', 'or', 'other', 'ought', 'our', 'ours', 'ourselves', 'out', 'over', 'own', 'same', 'she', "she'd", "she'll", "she's", 'should', 'so', 'some', 'such', 'than', 'that', "that's", 'the', 'their', 'theirs', 'them', 'themselves', 'then', 'there', "there's", 'these', 'they', "they'd", "they'll", "they're", "they've", 'this', 'those', 'through', 'to', 'too', 'under', 'until', 'up', 'very', 'was', 'we', "we'd", "we'll", "we're", "we've", 'were', 'what', "what's", 'when', "when's", 'where', "where's", 'which', 'while', 'who', "who's", 'whom', 'why', "why's", 'with', 'would', 'you', "you'd", "you'll", "you're", "you've", 'your', 'yours', 'yourself', 'yourselves']
+
+
+Total sentences in the dataset 5
+Num labels in the dataset
+['tech', 'business', 'sport', 'sport', 'entertainment']
+
+
+Tokenizer for sentences:
+number of words 783
+word_index: len = 783
+
+
+Tokenizer for labels:
+number of words 4
+word_index:
+{'sport': 1, 'tech': 2, 'business': 3, 'entertainment': 4}
+
+
+Padded Sequences for sentences:
+[[  5  98  99 ...  24  13  13]
+ [  9  33 422 ...   0   0   0]
+ [171 517  19 ...   0   0   0]
+ [ 37  38  85 ...   0   0   0]
+ [ 20   3  93 ...   0   0   0]]
+
+
+Sequences for labels:
+[[2], [3], [1], [1], [4]]
+
+
+
+C:\Users\dhanendra\ML\repo2\MLCoding\NLP>
