@@ -11,7 +11,7 @@ def read_common_words(filename):
       new_row = [field for field in row if field not in ['']]
       data.extend(new_row)
       
-    print('common words: total: {}'.format(len(data)))
+    print('common words to ignore: total: {}'.format(len(data)))
     print(data)
     print('\n')
   return data
@@ -38,12 +38,13 @@ def get_sentences_and_labels(filename):
 
 
 common_words = read_common_words("./data/common_words.csv")
-sentences, labels = get_sentences_and_labels("./data/bbc-text-minimal.csv")
+sentences, labels = get_sentences_and_labels("./data/sample_news_data.csv")
 sentences = [ignore_common_words(sentence, common_words) for sentence in sentences]
 
 
-print('Total sentences in the dataset {}'.format(len(sentences)))
-print('Num labels in the dataset'.format(len(labels)))
+print('Total sentences in the News dataset {}'.format(len(sentences)))
+print(sentences)
+print('Num labels in the News dataset'.format(len(labels)))
 print(labels)
 print('\n')
 
@@ -51,10 +52,10 @@ print('\n')
 tokenizer = Tokenizer(num_words = 1000000, oov_token='<OOV>')
 tokenizer.fit_on_texts(sentences)
 word_index = tokenizer.word_index
-
 print('Tokenizer for sentences:')
 print('number of words {}'.format(len(word_index)))
 print('word_index: len = {}'.format(len(word_index)))
+print(word_index)
 print('\n')
       
 sequences = tokenizer.texts_to_sequences(sentences)
@@ -64,7 +65,6 @@ padded_sequences = pad_sequences(sequences, padding='post')
 label_tokenizer = Tokenizer(num_words=100000)
 label_tokenizer.fit_on_texts(labels)
 label_word_index = label_tokenizer.word_index
-
 print('Tokenizer for labels:')
 print('number of words {}'.format(len(label_word_index)))
 print('word_index:')
