@@ -1,0 +1,22 @@
+C:\Users\dhanendra\ML\repo2\MLCoding\LinearAlgebra>
+C:\Users\dhanendra\ML\repo2\MLCoding\LinearAlgebra>python linear_equations.py
+Shape of Coefficients: (2, 2)
+Coefficients: [[ 5. -1.]
+ [ 7.  2.]]
+Shape of Values: (2,)
+Values: [10.  1.]
+Solution: [ 1.23529412 -3.82352941]
+Shape of Appended Matrix: (2, 3)
+[ 5. -1. 10.]
+[7. 2. 1.]
+
+C:\Users\dhanendra\ML\repo2\MLCoding\LinearAlgebra>python linear_equations.py
+Shape of Coefficients: (2, 2)
+Coefficients: [[ 5. -1.]
+ [ 7.  2.]]
+Shape of Values: (2,)
+Values: [10.  1.]
+Solution: [ 1.23529412 -3.82352941]
+Shape of Appended Matrix: (2, 3)
+[ 5. -1. 10.]
+[7. 2. 1.]
