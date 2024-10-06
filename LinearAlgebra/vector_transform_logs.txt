@@ -1,0 +1,23 @@
+$LinearAlgebra>python vector_transform.py
+input vector:
+ [[23]
+ [25]]
+
+transform matrix:
+ [[1 0]
+ [2 0]
+ [0 3]]
+
+transformed vector:
+ [[23]
+ [46]
+ [75]]
+
+for vector:
+ [[23]
+ [25]]
+
+transformed is:
+ [[23]
+ [46]
+ [75]]
